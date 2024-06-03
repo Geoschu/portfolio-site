@@ -16,6 +16,16 @@ function openModal(modalId) {
   }
 }
 
+function expandImage(modalId) {
+  const thumbnail = document.getElementById(`thumbnail-${modalId}`);
+  const large = document.getElementById(`large-${modalId}`);
+  if (thumbnail && large) {
+    thumbnail.style.display = "none";
+    large.style.display = "block";
+    large.classList.add("large");
+  }
+}
+
 function closeModal(modalId) {
   const modal = document.getElementById(modalId);
   if (modal) {

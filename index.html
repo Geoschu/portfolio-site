@@ -19,18 +19,29 @@
     <section id="about">
       <h1>George Schultz</h1>
       <img src="/assets/images/1000036615.jpg" alt="Your Photo" />
-      <p>About me</p>
+      <h1>About me</h1>
+      <p>
+        Hello! I'm a software engineer with a passion for problem-solving and a
+        strong interest in computer science. I have experience in front-end and
+        back-end development, and I'm always eager to learn new technologies and
+        improve my skills. In my free time, I enjoy building open-source
+        projects and exploring the latest trends in the tech industry.
+      </p>
     </section>
     <section id="work">
       <h2>My Work</h2>
       <div class="grid">
         <div class="item" data-project="1">
-          <img src="project1.jpg" alt="Project 1" />
+          <img src="/assets/images/Project1.png" alt="Project 1" />
           <h3>Semantic Refactor</h3>
         </div>
         <div class="item" data-project="2">
-          <img src="project2.jpg" alt="Project 2" />
+          <img src="/assets/images/Project2.png" alt="Project 2" />
           <h3>Portfolio</h3>
+        </div>
+        <div class="item" data-project="3">
+          <img src="/assets/images/Project3.png" alt="Project 3" />
+          <h3>Password Generator</h3>
         </div>
         <!-- Add more projects as needed -->
       </div>
@@ -41,6 +52,12 @@
         Email:
         <a href="mailto:georgeschultz@outlook.com">georgeschultz@outlook.com</a>
       </p>
+      <p>
+        GitHub:
+        <a href="https://github.com/geoschu" target="_blank"
+          >github.com/geoschu</a
+        >
+      </p>
     </section>
 
     <!-- Modals -->
@@ -48,14 +65,86 @@
       <div class="modal-content">
         <span class="close" onclick="closeModal('modal-1')">&times;</span>
         <h2>Semantic Refactor</h2>
-        <p>Details about Project 1...</p>
+        <p>
+          Semantic Refactor, is a study in refactoring HTML semantics. The
+          motivation behind this project was to understand and implement better
+          HTML semantics in web development. The project was built to refactor
+          an existing HTML codebase to improve its semantics. The main issue it
+          solved was poor readability and SEO performance due to non-semantic
+          HTML. Through this project, I learned the importance of semantic HTML
+          and how it can improve both accessibility and SEO.
+        </p>
+        <img
+          id="thumbnail-2"
+          class="thumbnail"
+          src="/assets/images/Project1.png"
+          alt="Project 2 Thumbnail"
+          onclick="expandImage('modal-2')"
+        />
+        <img
+          id="large-2"
+          class="large"
+          src="/assets/images/Project1-2.png"
+          alt="Project 2 Large"
+          style="display: none"
+        />
       </div>
     </div>
     <div class="modal" id="modal-2">
       <div class="modal-content">
         <span class="close" onclick="closeModal('modal-2')">&times;</span>
         <h2>Portfolio</h2>
-        <p>Details about Project 2...</p>
+        <p>
+          A portfolio website that showcases various projects. Each project is
+          represented by a thumbnail image. When a thumbnail is clicked, it
+          triggers a modal to open, displaying more details about the project.
+          The modal contains a larger version of the project image, a title, and
+          a description. The project uses semantic HTML for improved
+          accessibility and SEO.
+        </p>
+        <img
+          id="thumbnail-2"
+          class="thumbnail"
+          src="/assets/images/Project2.png"
+          alt="Project 2 Thumbnail"
+          onclick="expandImage('modal-2')"
+        />
+        <img
+          id="large-2"
+          class="large"
+          src="/assets/images/Project2-1.png"
+          alt="Project 2 Large"
+          style="display: none"
+        />
+      </div>
+    </div>
+    <div class="modal" id="modal-3">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-2')">&times;</span>
+        <h2>Portfolio</h2>
+        <p>
+          This project is a simple JavaScript application that generates random
+          passwords based on user preferences. The user can specify the length
+          of the password, and whether it should contain lowercase letters,
+          uppercase letters, digits, and special characters. The application was
+          built to provide a simple and user-friendly way to generate secure
+          passwords. It's designed to help users create complex and unique
+          passwords for their online accounts.
+        </p>
+        <img
+          id="thumbnail-3"
+          class="thumbnail"
+          src="/assets/images/Project3.png"
+          alt="Project 3 Thumbnail"
+          onclick="expandImage('modal-3')"
+        />
+        <img
+          id="large-3"
+          class="large"
+          src="/assets/images/Project3-1.png"
+          alt="Project 3 Large"
+          style="display: none"
+        />
       </div>
     </div>
     <!-- Add more modals as needed -->
