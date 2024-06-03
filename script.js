@@ -1,14 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const links = document.querySelectorAll("nav ul li a");
-  links.forEach((link) => {
-    link.addEventListener("click", (e) => {
-      e.preventDefault();
-      const targetId = e.target.getAttribute("href").substring(1);
-      const targetSection = document.getElementById(targetId);
-      window.scrollTo({
-        top: targetSection.offsetTop,
-        behavior: "smooth",
-      });
+  const gridItems = document.querySelectorAll(".grid .item");
+
+  gridItems.forEach((item) => {
+    item.addEventListener("click", () => {
+      // Remove active class from all items
+      gridItems.forEach((i) => i.classList.remove("active"));
+      // Add active class to the clicked item
+      item.classList.add("active");
     });
   });
 });
